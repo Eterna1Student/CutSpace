@@ -1,0 +1,40 @@
+.serve {
+    &__wrap {
+        width: 1110px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 30px;
+        margin-top: 45px;
+    }
+    &__card {
+        width: 50%;
+        padding: 40px 88px;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+            background: $orange;
+        }
+        &:hover .serve__title {
+            color: $white;
+        }
+        &:hover .serve__description {
+            color: $white;
+        }
+        &:hover>svg>path {
+            fill: $white;
+        }
+    }
+    &__img {
+        margin-bottom: 15px;
+    }
+    &__btn {
+        display: inline-block;
+        margin-top: 25px;
+        color: $orange;
+    }
+}
+

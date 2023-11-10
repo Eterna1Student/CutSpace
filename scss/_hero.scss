@@ -1,0 +1,81 @@
+.hero {
+    &__wrap {
+        width: 1110px;
+        margin: 0 auto;
+        padding: 127px 0 133px;
+        position: relative;
+    }
+
+    &__title {
+        width: 61%;
+        margin-bottom: 25px;
+        @include font(700, 54px, $black);
+        position: relative;
+        z-index: 2;
+        line-height: 146.296%;
+        letter-spacing: 0.8px;
+    }
+    &__description {
+        width: 43%;
+        margin-bottom: 42px;
+        @include font(400, 16px, $black);
+        line-height: 168.75%; 
+        letter-spacing: 1.15px;
+    }
+    &__form {
+        display: flex;
+        width: 42%;
+        justify-content: space-between;
+        text-align: center;
+        position: relative;
+        &::before {
+            content: url(/images/iconFormEmail.svg);
+            position: absolute;
+            z-index: 1;
+            top: 19px;
+            left: 4%;
+        }
+        &::after {
+            content: "Your email address";
+            top: 31%;
+            left: 13%;
+            @include font(400, 16px, $gray);
+            position: absolute;
+            z-index: 1;
+        }
+        &-email {
+            width: 71%;
+            padding: 18px 28px 16px;
+            border: none;
+            outline: none;
+            position: relative;
+            &:focus {
+                z-index: 3;
+            }
+        }      
+    }
+    &__btn {
+        background: $orange;
+        border: 2px solid $orange;
+        &:hover {
+            color: $orange;
+            background: $white;
+        } 
+    }
+    &__BG {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+}
+.swiper {
+    max-width: 1110px;
+    margin: 0 auto;
+    height: 241px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

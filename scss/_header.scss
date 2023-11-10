@@ -1,0 +1,30 @@
+.header {
+    &__wrap {
+        width: 1110px;
+        height: 112px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        width: 54%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        @include font(400, 16px, $black);
+        transition: all ease .3s;
+
+        &:hover {
+            color: $orange;
+            font-weight: 700;
+        }
+    }
+}
+
+.logo {
+    height: 44px;
+}

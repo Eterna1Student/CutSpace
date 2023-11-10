@@ -1,0 +1,72 @@
+.about {
+    position: relative;
+    padding-bottom: 50px;
+    &__wrap {
+        display: flex;
+        width: 1110px;
+        margin: 0 auto;
+        justify-content: flex-end;
+    }
+    &__bgFirst {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    &__bgSecond {
+        left: 23%;
+        position: absolute;
+        z-index: -1;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    &__example {
+        width: 300px;
+        height: 141px;
+        transform: translate(-130px, 320px);
+        padding: 32px 29px 32px 94px;
+        background: $white;
+        border-radius: 15px;
+        background-image: url(/images/aboutExampleBG.svg);
+        background-repeat: no-repeat;
+        background-position: 30px;
+
+    }
+    &__example-title {
+        @include font(700, 16px, $black);
+        letter-spacing: 0.8px;
+    }
+    &__example-description {
+        @include font(400, 16px, $black);
+        line-height: 168.75%;
+        letter-spacing: 1.15px;
+    }
+    &__content {
+        display: flex;
+        width: 34%;
+        padding-top: 55px;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-top: 20px;
+    }
+
+    &__description {
+        margin-top: 20px;
+    }
+
+    &__btn {
+        margin-top: 40px;
+        background: $orange;
+        border: 2px solid $orange;
+        &:hover {
+            color: $orange;
+            background: $white;
+        } 
+    }
+}
+
+.btn {
+
+}

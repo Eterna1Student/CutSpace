@@ -1,0 +1,73 @@
+.start {
+    padding: 145px 0;
+    &__wrap {
+        display: flex;
+        width: 1110px;
+        height: 464px;
+        margin: 0 auto;
+        border-radius: 20px;
+        background: $lightBlue;
+        justify-content: flex-end;
+        position: relative;
+        
+        &::before {
+            content: url(/images/startBGelement.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 32%;
+            top: 79%;
+        }
+        &::after {
+            content: url(/images//startBGelement2.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    &__BG {
+        width: 48%;
+        height: 90%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-top: 25px solid $white;
+        border-right: 25px solid $white;
+        border-top-right-radius: 21px;
+    }
+    &__content {
+        width: 50%;
+        
+        padding: 91px 8.5%;
+    }
+    &__title {
+        color: $white;
+    }
+    &__description {
+        margin: 15px 0 30px;
+        color: $white;
+    }
+    &__btn {
+        display: inline-block;
+        margin-right: 4%;
+        border: none;
+        background: $orange;
+        &:hover {
+            color: $orange;
+            background: $white;
+        }
+    }
+    &__link {
+        display: inline-block;
+        color: $black;
+        background: $white;
+        &:hover {
+            color: $white;
+            background: $orange;
+        }
+        &:hover>svg>path  {
+            fill: $white;
+        }
+    }
+}
+

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+$black: #323232;
+$white: #ffffff;
+$orange: #F78434;
+$lightBlue: #58BEBF;
+$gray: #bbb;
+
+@mixin font($fw, $fs, $color) {
+    font-weight: $fw;
+    font-size: $fs;
+    color: $color;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    width: 172px;
+    text-align: center;
+    font-family: 'Poppins', 'sans-serif';
+    padding: 18px 0 16px;
+    line-height: 125%;
+    border-radius: 30px;
+    @include font(700, 16px, $white);
+    cursor: pointer;
+    border: none
+}
+
+.title {
+    @include font(700, 42px, $black);
+    line-height: 168.75%;
+    letter-spacing: 1.15px; 
+}
+
+.description {
+    @include font(400, 16px, $black);
+    line-height: 168.75%;
+    letter-spacing: 1.15px;
+}
