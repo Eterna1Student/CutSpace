@@ -1,0 +1,49 @@
+.footer {
+    &__wrap {
+        display: flex;
+        width: 1110px;
+        margin: 0 auto;
+        padding: 96px 0 82px;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 27%;
+    }
+    &__description {
+        margin: 18px 0 40px;
+    }
+    &__links {
+        display: flex;
+        width: 184px;
+        justify-content: space-between;
+    }
+    &__link {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__right {
+        display: flex;
+        width: 53.5%;
+        justify-content: space-between;
+    }
+    &__column {
+
+    }
+    &__column-title {
+        display: block;
+        margin-bottom: 18px;
+        @include font(700, 21px, $black);
+        letter-spacing: 0.5px;
+    }
+    &__column-link {
+        display: block;
+        margin-bottom: 13px;
+        @include font(400, 14px, $black);
+        letter-spacing: 0.5px;
+        &:hover {
+            color: $lightBlue;
+        }
+    }
+}
+

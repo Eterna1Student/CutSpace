@@ -1,0 +1,39 @@
+.why {
+    &__wrap {
+        width: 1110px;
+        margin: 0 auto;
+        padding: 112px 0;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__cards {
+        display: flex;
+        gap: 3.15%;
+        margin-top: 58px;
+    }
+    &__card {
+        display: flex;
+        width: 22.34%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        &:hover .why__card-img>path {
+            fill: $white;
+        }
+        &:hover .why__card-img>ellipse {
+            fill: $white;
+        }
+        &:hover .why__card-img>circle {
+            fill: $orange;
+            fill-opacity: 1;
+        }
+    }
+    
+    &__card-title {
+        @include font(700, 28px, $black);
+        margin: 15px 0 2px;
+    }
+}
+

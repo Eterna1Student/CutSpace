@@ -1,0 +1,71 @@
+.thanks {
+    &__wrap {
+        width: 1150px;
+        margin: 0 auto;
+        padding: 58px 0;
+    }
+    &__hero {
+        display: flex;
+        margin-bottom: 58px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        width: 40.5%;
+    }
+    &__description {
+        width: 34.6%;
+    }
+    &__cards {
+        display: flex;
+        gap: 2.61%;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: 30.43%;
+        padding-bottom: 31px;
+        position: relative;
+        cursor: pointer;
+        &:hover &-location {
+            color: $orange;
+        }
+        &:hover {
+            box-shadow: 0px 10px 52px 0px rgba(0, 0, 0, 0.1);
+        }
+        &:hover .thanks__btn {
+            display: block;
+        }
+    }
+    &__btn {
+        display: none;
+        position: absolute;
+        background: none;
+        border: none;
+        cursor: pointer;
+        right: 20px;
+        top: 135px;
+    }
+    &__card-decor {
+        position: absolute;
+        top: -40px;
+        right: -40px;
+    }
+    &__card-picture {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__card-description, &__card-name, &__card-location {
+        padding: 0 29px;
+    }
+    &__card-name {
+        margin-top: 23px;
+        @include font(700, 18px, $black);
+        letter-spacing: 0.6px;
+    }
+    &__card-location {
+        @include font(400, 16px, $lightBlue);
+        line-height: 168.75%; 
+        letter-spacing: 1.15px; 
+    }
+}
