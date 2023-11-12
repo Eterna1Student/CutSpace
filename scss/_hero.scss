@@ -28,27 +28,21 @@
         justify-content: space-between;
         text-align: center;
         position: relative;
-        &::before {
-            content: url(/images/iconFormEmail.svg);
-            position: absolute;
-            z-index: 1;
-            top: 19px;
-            left: 4%;
-        }
-        &::after {
-            content: "Your email address";
-            top: 31%;
-            left: 13%;
-            @include font(400, 16px, $gray);
-            position: absolute;
-            z-index: 1;
-        }
+        border-radius: 29px;
+        box-shadow: -222px 7px 82px -10px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
         &-email {
             width: 71%;
-            padding: 18px 28px 16px;
+            padding: 18px 28px 16px 72px;
             border: none;
             outline: none;
             position: relative;
+            background-image: url(/images/iconFormEmail.svg);
+            background-repeat: no-repeat;
+            background-position: 9% 52%;
+            &::placeholder {
+                @include font(400, 16px, #BBB);
+            }
             &:focus {
                 z-index: 3;
             }
@@ -73,9 +67,16 @@
 }
 .swiper {
     max-width: 1110px;
-    margin: 0 auto;
     height: 241px;
-    display: flex;
-    justify-content: space-between;
+}
+
+.swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+            transition-timing-function: linear !important;
+  }
+
+.swiper-slide {
+    display: flex !important;
     align-items: center;
+    justify-content: center;
 }

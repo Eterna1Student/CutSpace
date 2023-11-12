@@ -66,11 +66,11 @@ a {
   font-weight: 400;
   font-size: 16px;
   color: #323232;
-  transition: all ease 0.3s;
+  transition: all ease 0.2s;
 }
 .header__link:hover {
   color: #F78434;
-  font-weight: 700;
+  transform: scale(1.07);
 }
 
 .logo {
@@ -109,30 +109,29 @@ a {
   justify-content: space-between;
   text-align: center;
   position: relative;
-}
-.hero__form::before {
-  content: url(/images/iconFormEmail.svg);
-  position: absolute;
-  z-index: 1;
-  top: 19px;
-  left: 4%;
-}
-.hero__form::after {
-  content: "Your email address";
-  top: 31%;
-  left: 13%;
-  font-weight: 400;
-  font-size: 16px;
-  color: #bbb;
-  position: absolute;
-  z-index: 1;
+  border-radius: 29px;
+  box-shadow: -222px 7px 82px -10px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
 }
 .hero__form-email {
   width: 71%;
-  padding: 18px 28px 16px;
+  padding: 18px 28px 16px 72px;
   border: none;
   outline: none;
   position: relative;
+  background-image: url(/images/iconFormEmail.svg);
+  background-repeat: no-repeat;
+  background-position: 9% 52%;
+}
+.hero__form-email::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #BBB;
+}
+.hero__form-email::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #BBB;
 }
 .hero__form-email:focus {
   z-index: 3;
@@ -156,11 +155,17 @@ a {
 
 .swiper {
   max-width: 1110px;
-  margin: 0 auto;
   height: 241px;
-  display: flex;
-  justify-content: space-between;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+  display: flex !important;
   align-items: center;
+  justify-content: center;
 }
 
 .about {
@@ -519,6 +524,9 @@ a {
   display: flex;
   width: 184px;
   justify-content: space-between;
+}
+.footer__link {
+  transition: all ease 0.3s;
 }
 .footer__link:hover {
   transform: scale(1.1);

@@ -16,11 +16,11 @@
 
     &__link {
         @include font(400, 16px, $black);
-        transition: all ease .3s;
+        transition: all ease .2s;
 
         &:hover {
             color: $orange;
-            font-weight: 700;
+            transform: scale(1.07);
         }
     }
 }
