@@ -1,27 +1,26 @@
 .get {
-    padding: 60px 0;
     position: relative;
-    background-image: url(/images/getBG.png);
+    background-image: url(/images/getExperience.svg);
     background-repeat: no-repeat;
-    background-size: 33%;
-    background-position: 75% bottom;
-    &__bg {
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-    }
+
     &__wrap {
-        width: 1110px;
-        margin: 0 auto;
-    }
-    &__title {
-        margin: 156px 0 15px;
-        line-height: 147.6%;
-        letter-spacing: 0.8px;
+        max-width: 1110px;
+        margin: 0 11.46%;
+        padding: 195px 0 55px;
+        background-image: url(/images/getMadam.png);
+        background-repeat: no-repeat;
+        background-size: 43%;
+        background-position: 89% bottom;
+
     }
     &__title, &__description {
-        width: 32.34%;
+        width: 359px;
         color: $white;
+    }
+    &__title {
+        margin: 0 0 15px;
+        line-height: 147.6%;
+        letter-spacing: 0.8px;
     }
 
     &__btn {

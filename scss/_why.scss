@@ -1,6 +1,6 @@
 .why {
     &__wrap {
-        width: 1110px;
+        max-width: 1110px;
         margin: 0 auto;
         padding: 112px 0;
     }
@@ -14,7 +14,7 @@
     }
     &__card {
         display: flex;
-        width: 22.34%;
+        width: 248px;
         text-align: center;
         flex-direction: column;
         align-items: center;
@@ -37,3 +37,17 @@
     }
 }
 
+
+
+
+@media screen and (width < 992px) { 
+    .why {
+        &__cards {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__card {
+            margin-bottom: 60px;
+        }
+    }
+}

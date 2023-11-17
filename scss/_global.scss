@@ -27,8 +27,9 @@ a {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1420px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .btn {
@@ -54,4 +55,14 @@ a {
     @include font(400, 16px, $black);
     line-height: 168.75%;
     letter-spacing: 1.15px;
+}
+
+
+@media screen and (width < 992px) { 
+    .title {
+        font-size: 35.7px;
+    }
+    .description {
+        font-size: 13.6px;
+    }
 }

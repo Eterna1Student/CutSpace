@@ -7,5 +7,4 @@ const swiper = new Swiper('.swiper', {
         delay: 0,
       },
     slidesPerView: 4,
-    spaceBetween: 10,
   });

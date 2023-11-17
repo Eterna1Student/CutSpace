@@ -1,23 +1,25 @@
 .hero {
     &__wrap {
-        width: 1110px;
+        max-width: 1110px;
         margin: 0 auto;
         padding: 127px 0 133px;
         position: relative;
     }
 
     &__title {
-        width: 61%;
+        max-width: 674px;
         margin-bottom: 25px;
-        @include font(700, 54px, $black);
         position: relative;
         z-index: 2;
+        @include font(700, 54px, $black);
         line-height: 146.296%;
         letter-spacing: 0.8px;
     }
     &__description {
-        width: 43%;
+        max-width: 467px;
         margin-bottom: 42px;
+        position: relative;
+        z-index: 2;
         @include font(400, 16px, $black);
         line-height: 168.75%; 
         letter-spacing: 1.15px;
@@ -25,8 +27,6 @@
     &__form {
         display: flex;
         width: 42%;
-        justify-content: space-between;
-        text-align: center;
         position: relative;
         border-radius: 29px;
         box-shadow: -222px 7px 82px -10px rgba(0, 0, 0, 0.12);
@@ -51,12 +51,14 @@
     &__btn {
         background: $orange;
         border: 2px solid $orange;
+        margin-right: 7px;
         &:hover {
             color: $orange;
             background: $white;
         } 
     }
     &__BG {
+        width: 540px;
         position: absolute;
         top: 0;
         right: 0;
@@ -66,7 +68,7 @@
     }
 }
 .swiper {
-    max-width: 1110px;
+    max-width: 1109px;
     height: 241px;
 }
 
@@ -77,6 +79,68 @@
 
 .swiper-slide {
     display: flex !important;
+    padding: 0 5.41%;
     align-items: center;
     justify-content: center;
+    &__img {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (width < 992px) { 
+    .hero {
+        &__wrap {
+            padding: 102px 0 106px;
+        }
+    
+        &__title {
+
+        }
+        &__description {
+            font-size: 13px;
+        }
+        &__form {
+            flex-direction: column;
+            box-shadow: none;
+            &-email {
+                margin-bottom: 10px;
+                padding: 18px 18px 16px 60px;
+            }      
+        }
+        &__btn {
+
+        }
+        &__BG {
+            width: 485px;
+        }
+    }
+}
+
+@media screen and (width < 768px) { 
+    .hero {
+        &__wrap {
+            
+        }
+    
+        &__title {
+            
+        }
+        &__description {
+            
+        }
+        &__form {
+
+            &-email {
+
+            }      
+        }
+        &__btn {
+
+        }
+        &__BG {
+            
+        }
+    }
 }
