@@ -5,7 +5,6 @@
         padding: 127px 0 133px;
         position: relative;
     }
-
     &__title {
         max-width: 674px;
         margin-bottom: 25px;
@@ -94,9 +93,8 @@
         &__wrap {
             padding: 102px 0 106px;
         }
-    
         &__title {
-
+            font-size: 43.2px;
         }
         &__description {
             font-size: 13px;
@@ -109,9 +107,6 @@
                 padding: 18px 18px 16px 60px;
             }      
         }
-        &__btn {
-
-        }
         &__BG {
             width: 485px;
         }
@@ -120,27 +115,43 @@
 
 @media screen and (width < 768px) { 
     .hero {
-        &__wrap {
-            
-        }
-    
-        &__title {
-            
-        }
-        &__description {
-            
-        }
         &__form {
-
+            width: 320px;
             &-email {
-
-            }      
+                border-radius: 31px;
+            }
         }
-        &__btn {
+        &__title {
+            font-size: 34.5px;
+        }
+    }
+}
 
+@media screen and (width < 576px) { 
+    .hero {
+        &__title {
+            font-size: 26px;
         }
         &__BG {
-            
+            width: 80%;
+        }
+    }
+}
+
+
+@media screen and (width < 480px) { 
+    .hero {
+        &__wrap {
+            padding: 50px 0;
+        }
+        &__title {
+            margin-bottom: 15px;
+        }
+        &__description {
+            margin-bottom: 25px;
+        }
+        &__BG {
+            width: 320px;
         }
     }
 }

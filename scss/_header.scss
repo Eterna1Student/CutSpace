@@ -12,6 +12,11 @@
         width: 54%;
         display: flex;
         justify-content: space-between;
+        &-btn {
+            display: none;
+            background: none;
+            border: none;
+        }
     }
 
     &__link {
@@ -32,19 +37,24 @@
 
 @media screen and (width < 992px) { 
     .header {
-        &__wrap {
-            
-        }
-    
-        &__menu {
-            
-        }
-    
         &__link {
             font-size: 13px;
-            &:hover {
-                
+        }
+    }
+}
+
+
+@media screen and (width < 768px) { 
+    .header {
+        &__menu {
+            justify-content: flex-end;
+            &-btn {
+                display: block;
+                margin-right: 5px;
             }
+        }
+        &__link {
+            display: none;
         }
     }
 }

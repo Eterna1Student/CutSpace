@@ -74,6 +74,12 @@
 
 @media screen and (width < 768px) { 
     .thanks {
+        &__wrap {
+            padding: 0;
+        }
+        &__hero {
+            margin-bottom: 35px;
+        }
         &__title {
             width: 55%;
         }
@@ -83,6 +89,12 @@
         }
         &__card {
             width: 60%; 
+        }
+        &__card-picture {
+            margin-bottom: 15px;
+        }
+        &__card-name {
+            margin-top: 10px;
         }
     }
  }
@@ -99,11 +111,9 @@
         &__description {
             width: 100%;
         }
-        &__cards {
-            
-        }
-        &__card {
-
+        &__card-decor {
+            width: 40px;
+            right: -20px;
         }
     }
  }

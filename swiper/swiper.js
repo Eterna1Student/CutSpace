@@ -7,4 +7,15 @@ const swiper = new Swiper('.swiper', {
         delay: 0,
       },
     slidesPerView: 4,
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
+      },
+      576: {
+        slidesPerView: 3,
+      },
+      320: {
+        slidesPerView: 2
+      }
+    },
   });

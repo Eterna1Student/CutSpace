@@ -51,3 +51,15 @@
         }
     }
 }
+
+
+@media screen and (width < 768px) { 
+    .why {
+        &__wrap {
+            padding: 55px 0;
+        }
+        &__card {
+            margin-bottom: 30px;
+        }
+    }
+}

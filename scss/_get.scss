@@ -14,7 +14,7 @@
 
     }
     &__title, &__description {
-        width: 359px;
+        max-width: 359px;
         color: $white;
     }
     &__title {

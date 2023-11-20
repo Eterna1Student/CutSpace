@@ -89,3 +89,28 @@
         }
     }
 }
+
+
+@media screen and (width < 768px) { 
+    .about {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        flex-direction: column;
+        &__wrap {
+            width: 100%;
+            justify-content: normal;
+        }
+        &__content {
+            max-width: 1100px;
+        }
+        &__example {
+            transform: translate(-4%, 100%);
+        }
+        &__bgSecond {
+            width: 100%;
+        }
+    }
+}
+
+

@@ -60,6 +60,16 @@
         }
         &__card {
             width: 100%;
+            padding: 25px 30px;
         }
     }
 }
+
+
+@media screen and (width < 576px) { 
+    .serve {
+         &__btn {
+            max-width: 120px;
+         }
+     }
+ }

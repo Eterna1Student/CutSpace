@@ -75,67 +75,19 @@
 
 @media screen and (width < 1200px) { 
     .start {
-        &__wrap {
-            
-            
-            &::before {
-                
-            }
-            &::after {
-                
-            }
-        }
-        &__BG {
-            
-        }
         &__content {
             padding: 91px 3.5%;
-        }
-        &__title {
-           
-        }
-        &__description {
-         
-        }
-        &__btn {
-           
-            &:hover {
-                
-            }
-        }
-        &__link {
-            
-            &:hover {
-               
-            }
-
         }
     }
 }
 
 @media screen and (width < 992px) { 
     .start {
-        &__wrap {
-            
-            
-            &::before {
-                
-            }
-            &::after {
-                
-            }
-        }
         &__BG {
             height: 65%;
         }
         &__content {
             padding: 45px 3.5%;
-        }
-        &__title {
-           
-        }
-        &__description {
-         
         }
         &__btn {
             display: block;
@@ -144,6 +96,27 @@
         &__link {
             display: block;
             margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (width < 768px) {
+    .start {
+        padding: 90px 0;
+    }
+}
+
+@media screen and (width < 576px) { 
+    .start {
+        &__wrap {
+            justify-content: center;
+            align-items: center;
+        }
+        &__BG {
+            display: none;
+        }
+        &__content {
+            width: 70%;
         }
     }
 }
